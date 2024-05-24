@@ -11,7 +11,7 @@ body {
   grid-template-columns: auto;
   grid-template-rows: 80px 100px;
   background-color: #3CB371;
-  height: 50rem;
+  height: 125vh;
   width:18.75rem;
   padding: 10px;
  }
@@ -19,24 +19,40 @@ body {
  .grid-container > div {
     color: whitesmoke;
     padding: 20px 0;
-    font-size: 2rem;
+    font-size: 2.25rem;
+  }
+
+  .name, #sidebarMenuDiv{
+    font-size: 1.75rem;
+    margin-top: 0;
+  }
+
+  .sideBarMenu {
+  margin: 2rem 0 2rem 0;
+  display: inline-flex;
+  vertical-align: top;
+  }
+
+  #icons {
+  margin-right: 1rem;
+  font-size: 3rem;
+  line-height:40px;
+  }
+  
+  .grid-items{
+    padding: 20px;
   }
 
   .nav-bar {
     display: grid;
     grid-template-columns: auto auto;
     height: 15rem;
-    width: 77%;
+    width: 100vw;
     background-color: white;
     z-index: 1;
     position: absolute;
     margin-left: 20rem;
     box-shadow: rgb(204, 202, 202) 3px 3px;
-  }
-
-  .grid-items{
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    padding: 20px;
   }
 
 .pf{
@@ -53,11 +69,6 @@ body {
     font-weight:lighter;
 }
 
-
-.name, #sidebarMenuDiv{
-    font-size: 1.5rem;
-    margin-top: 0;
-}
 
 /* buttons */
 #newBook,.btnAdd {
@@ -111,9 +122,11 @@ button:active {
   border-radius: 50%;
   border-style: none;
   position: fixed;
-  top: 500px;
-  left: 1250px;
+  top: 80vh;
+  left: 90vw;
 }
+
+/* Form */
 
 .divForm{
   display: grid;
@@ -122,8 +135,8 @@ button:active {
   align-items: center;
   justify-items: center;
   position: absolute;
-  top: 100px;
-  left: 625px;
+  top: 20vh;
+  left: 50vw;
   height: 25rem;
   width: 25rem;
   z-index: 1;
@@ -143,20 +156,50 @@ button:active {
   border-radius: 10px
 }
 
+/* Card */
+
 .cardContainer {
-  /* background-color: white; */
+  display: flex;
+  flex-direction: row;
   width: 77%;
   height: 95%;
   top: 235px;
   left: 320px;
   position: absolute;
   z-index: -1;
+  
 }
 
 .insertCard {
-  /* display: flex; */
-  background-color: white;
-  width: 10rem;
-  height: 10rem;
+  display: block;
+  background-color: rgb(252, 248, 248);
+  width: max-content;
+  height: max-content;
   margin: 1rem;
+  border-radius: 10px;
+  box-shadow: rgb(204, 202, 202) 2px 3px;
 }
+.insertBookTitle{
+padding: 0 10px 0 10px;
+}
+
+.insertBookAuthor,.insertBookPages,.bookStatus {
+padding-left: 10px;
+}
+
+.colorStatus {
+  height: 1rem;
+  width: 100%
+}
+/*  */
+
+footer{
+  margin-top: 2.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+a{
+  color: white;
+}
+

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
@@ -15,22 +16,31 @@
     <div class="grid-items"><img src="/OCREW10ociuzFWYXStabsbd3EQlBaGQvwI6D790BxaOFf_QWHt5XRh_INWEjsGJ7rYPN1f-xVWnD5JRbZnUs1v62_Uk9h_pik7JcuPo.jpg" alt="Ppicture" class="pf">
       <p class="greetings"><em>Hi there,</em></p>
       <p class="name"></p>
-      <button id="newBook"><i class="fa-solid fa-plus"></i> New</button>
-      <button id="logOut"><i class="fa-regular fa-right-from-bracket"></i> Log Out</button>
+      <button id="newBook"><i class="material-symbols-outlined" style="font-size:14px;">add</i>New</button>
+      <button id="logOut"><i class="material-symbols-outlined" style="font-size:14px;">Logout</i> Log Out</button>
     </div>
     <div class="grid-items">
-      <p>STATUS</p>
-      <p>Books:</p>
-      <p>Total Pages:</p>
-      <p>Completed:</p>
+      <p>LIBRARY STATUS</p>
+      <p class = "countBooks">Total Books:</p>
+      <p class = "countPages">Total Pages:</p>
+      <p class = "readBooks">Read Books:</p>
+      <p class = "unreadBooks">Unread Books:</p>
     </div>
   </div>
     <div class="grid-container">
-          <div class="logo"><i class="fa-thin fa-books-medical"></i> Pirate Books</div>
+          <div class="logo"><i class="material-symbols-outlined" style="font-size:2rem;">Dashboard</i>Pirate Books</div>
           <div id="sidebarMenuDiv">
-            <div class="Home"><i class="fa-solid fa-house"></i>  Home</div>
+            <div class="sideBarMenu"><i class="material-symbols-outlined" id= "icons">Home</i>Home</div>
+            <div class="sideBarMenu"><i class="material-symbols-outlined" id= "icons">Shield_Person</i>Profile</div>
+            <div class="sideBarMenu"><i class="material-symbols-outlined" id= "icons">Settings</i>Settings</div>
+            <div class="sideBarMenu"><i class="material-symbols-outlined" id= "icons">Code</i>Developer</div>
+            <div class="sideBarMenu"><i class="material-symbols-outlined" id= "icons">Verified_User</i>Privacy</div>
+            <footer>Designed and Develop by <a href="https://github.com/YDeveloper09"><br>@YDeveloper09</a></footer>
           </div>
-          <button id="mode"><i class="fa-thin fa-sun-bright fa-2xl"></i></button>
+          <button id="mode"><i class="material-symbols-outlined">light_mode</i></button>
+    </div>
+    <div class="cardContainer">
+      
     </div>
     <script src="index.js"></script>
 </body>
